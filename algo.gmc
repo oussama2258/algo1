@@ -1,0 +1,24 @@
+
+VAR
+    E : CHAR := '';
+    nbr1 : INTEGER := 0;
+    nbr2 : INTEGER := 0;
+    nbr3 : INTEGER := 0;
+BEGIN
+    WHILE (E <> '.') DO
+        Read(E);
+        nbr1 := nbr1 +1;
+        IF (c = 'a' OR c='e' OR c='i' OR c='o' OR c='u' OR c='y') THEN
+           nbr3 := nbr3 +1;
+        END_IF
+
+        IF (E=' ') THEN
+            nbr2 := nbr2 +1;
+        END_IF
+        
+    END_WHILE
+
+    Write("The length of the sentence is ",nbr1);
+    Write("The number of words in the sentence is ",nbr2);
+    Write("he number of vowels in the sentence. is ",nbr3);
+END
